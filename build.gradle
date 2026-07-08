@@ -18,9 +18,11 @@ sourceSets.main.resources {
     exclude("src/generated/**/.cache")
 }
 
+// 1. AQUÍ AÑADIMOS MODRINTH COMO FUENTE DE DESCARGA
 repositories {
-    flatDir {
-        dirs 'libs'
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
     }
 }
 
@@ -77,9 +79,10 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+// 2. AQUÍ CONECTAMOS LOS MODS DIRECTAMENTE DESDE MODRINTH
 dependencies {
-    compileOnly files("libs/TAB v5.2.1 1.20.5 - 1.21.1.jar")
-    compileOnly files("libs/simpleeconomy-1.0.0.jar")
+    compileOnly 'maven.modrinth:tab-was-taken:5.2.1'
+    compileOnly 'maven.modrinth:simple-economies:1.0.0'
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
