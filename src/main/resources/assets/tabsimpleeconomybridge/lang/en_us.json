@@ -1,0 +1,9 @@
+{
+  "tabsimpleeconomybridge.configuration.title": "TAB SimpleEconomy Bridge Config",
+  "tabsimpleeconomybridge.configuration.section.tabsimpleeconomybridge-common.toml": "General",
+  "tabsimpleeconomybridge.configuration.enableBridge": "Enable bridge",
+  "tabsimpleeconomybridge.configuration.placeholder": "Placeholder",
+  "tabsimpleeconomybridge.configuration.showDecimals": "Show decimals",
+  "tabsimpleeconomybridge.configuration.fallbackValue": "Fallback value",
+  "tabsimpleeconomybridge.configuration.debugLogging": "Debug logging"
+}
