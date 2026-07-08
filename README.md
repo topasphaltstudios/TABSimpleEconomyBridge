@@ -1,6 +1,6 @@
-TABSimpleEconomyBridge
+# TABSimpleEconomyBridge
 
-A NeoForge mod for Minecraft 1.21.1 that connects SimpleEconomy with TAB using a configurable placeholder.
+A server-side NeoForge mod for Minecraft 1.21.1 that connects SimpleEconomy with TAB using a configurable placeholder.
 
 ## Compatibility
 
@@ -11,10 +11,11 @@ A NeoForge mod for Minecraft 1.21.1 that connects SimpleEconomy with TAB using a
 
 ## What it does
 
-TABSimpleEconomyBridge registers a TAB placeholder that reads a player's balance from SimpleEconomy and displays it in TAB.
+TABSimpleEconomyBridge is a server-side bridge mod that registers a TAB placeholder, reads a player's balance from SimpleEconomy, and displays it in TAB.
 
 ## Features
 
+- Server-side integration between TAB and SimpleEconomy
 - Configurable TAB placeholder
 - Support for rounded or decimal balance display
 - Fallback value if the balance cannot be read
